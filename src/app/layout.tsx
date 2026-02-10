@@ -4,6 +4,8 @@ import Header from '@/app/components/Layout/Header'
 import Footer from '@/app/components/Layout/Footer'
 import ScrollToTop from '@/app/components/ScrollToTop'
 import Aoscompo from '@/utils/aos'
+import { Analytics } from '@vercel/analytics/react'
+
 const font = Manrope({ subsets: ['latin'] })
 
 export default function RootLayout({
@@ -20,6 +22,7 @@ export default function RootLayout({
           <Footer />
         </Aoscompo>
         <ScrollToTop />
+        <Analytics />
       </body>
     </html>
   )
