@@ -5,10 +5,10 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { footerlinks } from '@/app/types/footerlinks'
 
-const footer = () => {
+const Footer = () => {
   // fetch data
 
-  const [footerlinks, setFooterLinks] = useState<footerlinks[]>([])
+  const [links, setLinks] = useState<footerlinks[]>([])
 
   useEffect(() => {
     const fetchData = async () => {
@@ -16,7 +16,7 @@ const footer = () => {
         const res = await fetch('/api/data')
         if (!res.ok) throw new Error('Failed to fetch')
         const data = await res.json()
-        setFooterLinks(data.FooterLinksData)
+        setLinks(data.FooterLinksData)
       } catch (error) {
         console.error('Error fetching services:', error)
       }
@@ -76,18 +76,18 @@ const footer = () => {
             </div>
           </div>
           {/* CLOUMN-2/3 */}
-          {footerlinks.map((item, i) => (
+          {links.map((item, i) => (
             <div key={i} className='group relative col-span-2'>
               <p className='text-white text-xl font-extrabold mb-9'>
                 {item.section}
               </p>
               <ul>
-                {item.links.map((item, i) => (
-                  <li key={i} className='mb-5'>
+                {item.links.map((linkItem, idx) => (
+                  <li key={idx} className='mb-5'>
                     <Link
-                      href={`${item.href}`}
+                      href={`${linkItem.href}`}
                       className='text-white text-lg font-normal mb-6 space-links hover:text-white/60 hover:underline'>
-                      {item.label}
+                      {linkItem.label}
                     </Link>
                   </li>
                 ))}
@@ -124,4 +124,4 @@ const footer = () => {
   )
 }
 
-export default footer
+export default Footer
