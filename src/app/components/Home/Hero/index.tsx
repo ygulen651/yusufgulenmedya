@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { Icon } from '@iconify/react/dist/iconify.js'
+import { Icon } from "@iconify/react";
 
 const Hero = () => {
   const leftAnimation = {

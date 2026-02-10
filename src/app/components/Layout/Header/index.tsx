@@ -7,7 +7,7 @@ import { HeaderItem } from '@/app/types/menu'
 import Logo from './Logo'
 import HeaderLink from './Navigation/HeaderLink'
 import MobileHeaderLink from './Navigation/MobileHeaderLink'
-import { Icon } from '@iconify/react/dist/iconify.js'
+import { Icon } from "@iconify/react";
 
 const Header: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
