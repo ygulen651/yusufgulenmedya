@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from '@/app/components/Home/Hero'
+import Companies from '@/app/components/Home/Companies'
 import Aboutus from '@/app/components/Home/AboutUs'
 import Dedicated from '@/app/components/Home/Dedicated'
 import Digital from '@/app/components/Home/Digital'
@@ -22,6 +23,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <Companies />
       <Aboutus />
       <Dedicated />
       <Digital />
