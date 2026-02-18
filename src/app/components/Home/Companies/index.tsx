@@ -5,6 +5,7 @@ import Image from 'next/image'
 const Companies = () => {
     const logos = [
         { src: '/images/logolar/YENİ LOGO SİYAH PNG.png', alt: 'Yeni Logo Siyah', isLarge: true },
+        { src: '/images/logolar/width_1600.png', alt: 'Width 1600' },
         { src: '/images/logolar/360.png', alt: '360' },
         { src: '/images/logolar/ANI.png', alt: 'ANI' },
         { src: '/images/logolar/Detay Sigorta.png', alt: 'Detay Sigorta' },
