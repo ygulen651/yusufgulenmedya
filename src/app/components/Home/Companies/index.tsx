@@ -20,6 +20,10 @@ const Companies = () => {
         { src: '/images/logolar/ulak logo.png', alt: 'Ulak' },
         { src: '/images/logolar/Çalışma Yüzeyi 1@4x.png', alt: 'Çalışma Yüzeyi' },
         { src: '/images/logolar/İkev logo.png', alt: 'İkev' },
+        { src: '/images/logolar/ilkem.png', alt: 'Ilkem' },
+        { src: '/images/logolar/Pamir Villaları Logo.png', alt: 'Pamir Villaları' },
+        { src: '/images/logolar/saray.png', alt: 'Saray' },
+        { src: '/images/logolar/Varlik-1.png', alt: 'Varlik' },
     ]
 
     // Double the logos for infinite effect
