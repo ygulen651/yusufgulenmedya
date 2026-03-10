@@ -5,8 +5,8 @@ export default function robots(): MetadataRoute.Robots {
         rules: {
             userAgent: '*',
             allow: '/',
-            disallow: ['/private/'],
+            disallow: ['/private/'], // İndekslenmesini istemediğiniz dizinleri buraya ekleyebilirsiniz
         },
-        sitemap: 'https://yusufgulenmedya.com.tr/sitemap.xml',
+        sitemap: 'https://www.yusufgulenmedya.com.tr/sitemap.xml',
     }
 }

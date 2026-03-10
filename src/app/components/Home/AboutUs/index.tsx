@@ -28,7 +28,7 @@ const Aboutus = () => {
   }, [])
 
   return (
-    <section id='About' className='bg-cover bg-center overflow-hidden'>
+    <section id='About' className=' bg-cover bg-center overflow-hidden'>
       <div className='container mx-auto max-w-7xl px-4 relative z-1'>
         <div className='p-12 bg-grey rounded-3xl'>
           <Image
@@ -38,27 +38,25 @@ const Aboutus = () => {
             alt='dots-image'
             className='absolute bottom-1 -left-20'
           />
-          <header>
-            <p className='text-center text-primary text-lg tracking-widest uppercase mt-10'>
-              HAKKIMIZDA
-            </p>
-            <h2 className='text-center pb-12'>Hakkımızda daha fazlasını öğrenin.</h2>
-          </header>
+          <p className='text-center text-primary text-lg tracking-widest uppercase mt-10'>
+            HAKKIMIZDA
+          </p>
+          <h2 className='text-center pb-12'>Hakkımızda daha fazlasını öğrenin.</h2>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 mt-10'>
             {loading
               ? Array.from({ length: 3 }).map((_, index) => (
                 <AboutSkeleton key={index} />
               ))
               : about.map((item, i) => (
-                <article
+                <div
                   key={i}
                   className='hover:bg-darkmode bg-white rounded-3xl p-8 shadow-xl group'>
-                  <h3 className='group-hover:text-white mb-5 text-2xl font-semibold'>
+                  <h5 className='group-hover:text-white mb-5'>
                     {item.heading}
-                  </h3>
+                  </h5>
                   <Image
                     src={item.imgSrc}
-                    alt={item.heading}
+                    alt={item.imgSrc}
                     width={100}
                     height={100}
                     className='mb-5'
@@ -76,7 +74,7 @@ const Aboutus = () => {
                       height='20'
                     />
                   </Link>
-                </article>
+                </div>
               ))}
           </div>
         </div>

@@ -13,7 +13,29 @@ import FAQ from '@/app/components/Home/FAQ'
 import Testimonial from '@/app/components/Home/Testimonials'
 import Join from '@/app/components/Home/Joinus'
 import Insta from '@/app/components/Home/Insta'
-// Metadata is globally configured in layout.tsx
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Yusuf Gülen Medya | Web Tasarım ve Dijital Çözümler',
+  description: 'Yusuf Gülen Medya; Karaman yazılım, web tasarım, sosyal medya yönetimi, mobil programlama, logo ve içerik üretimi alanlarında profesyonel çözümler sunar.',
+  keywords: ['Yusuf Gülen Medya', 'Karaman Medya', 'Karaman Yazılım', 'Karaman Sosyal Medya', 'Karaman Mobil Programlama', 'Karaman Web Tasarım', 'Karaman SEO', 'Yusuf Gülen', 'Yusuf Gülen Yazılım', 'Kurumsal Kimlik', 'E-Ticaret'],
+  openGraph: {
+    title: 'Yusuf Gülen Medya | Web ve Dijital Çözümler',
+    description: 'Yusuf Gülen Medya ile markanızı dijitalde büyütün! Modern web tasarımları, SEO altyapısı ve yenilikçi dijital çözümler için alanında uzman ekibimizle profesyonel hizmet sunuyoruz.',
+    url: 'https://www.yusufgulenmedya.com.tr',
+    siteName: 'Yusuf Gülen Medya',
+    locale: 'tr_TR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Yusuf Gülen Medya | Profesyonel Yazılım ve Medya',
+    description: 'Markanızı dijitalde büyütüyoruz. Profesyonel web tasarım, yazılım, SEO ve medya hizmetleri.',
+  },
+  alternates: {
+    canonical: 'https://www.yusufgulenmedya.com.tr',
+  },
+}
 
 export default function Home() {
   return (

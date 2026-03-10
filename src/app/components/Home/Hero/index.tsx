@@ -25,10 +25,10 @@ const Hero = () => {
         <div className='grid grid-cols-12 justify-center items-center'>
           <div className='col-span-12 xl:col-span-5 lg:col-span-6 md:col-span-12 sm:col-span-12 text-center lg:text-start'>
             <div className='py-2 px-5 bg-primary/15 rounded-full w-fit mx-auto lg:mx-0'>
-              <p className='text-primary text-sm lg:text-lg font-bold'>Yusuf Gülen Medya</p>
+              <h2 className='text-primary text-sm lg:text-lg font-bold'>Yusuf Gülen Medya | Karaman Yazılım & Medya Ajansı</h2>
             </div>
-            <h1 className='text-4xl lg:text-6xl font-bold mt-5 leading-tight'>
-              Fikirlerinizi hayata geçirmeye adandık.
+            <h1 className='text-4xl lg:text-5xl font-bold mt-5 leading-tight'>
+              Karaman'da Dijital Fikirlerinizi Hayata Geçiriyoruz.
             </h1>
             <Link href={'#Contact'}>
               <button className='bg-primary text-white text-lg lg:text-xl font-semibold py-4 lg:py-5 px-10 lg:px-12 rounded-full hover:bg-darkmode hover:cursor-pointer mt-10 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1'>
